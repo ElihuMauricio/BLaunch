@@ -1,13 +1,13 @@
 {
     "name": "Brazuca-Launcher",
     "preductname": "Brazuca Launcher",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Launcher de Brazuca Studios",
     "main": "src/app.js",
     "author": {
-        "name": "luuxis, Inc.",
-        "email": "contact@luuxis.fr",
-        "url": "https://github.com/luuxis"
+        "name": "IgnExotic",
+        "email": "IgnExoticJr@gmail.com",
+        "url": "http://IgnExotic.fun"
     },
     "url": "http://ignexotic.fun/Api/BLaunch",
     "scripts": {
@@ -22,6 +22,7 @@
         "ignore": "**/test"
     },
     "dependencies": {
+        "discord-rpc": "^4.0.1",
         "electron-updater": "^6.1.4",
         "minecraft-java-core": "^3.9.1",
         "node-bdd": "^2.0.3",

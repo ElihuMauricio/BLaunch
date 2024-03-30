@@ -30,10 +30,14 @@ class Login {
     async getMicrosoft() {
         console.log('Initializing Microsoft login...');
         let popupLogin = new popup();
-        let loginHome = document.querySelector('.login-home');
-        let microsoftBtn = document.querySelector('.connect-home');
+        let loginHome = document.querySelector('.login-card');
+        let microsoftBtn = document.querySelector('.microsoft');
+        let crackBtn = document.querySelector('.mojang');
         loginHome.style.display = 'block';
 
+        crackBtn.addEventListener("click", () => {
+            this.getCrack();
+        });
         microsoftBtn.addEventListener("click", () => {
             popupLogin.openPopup({
                 title: 'Connexion',
@@ -63,10 +67,9 @@ class Login {
     async getCrack() {
         console.log('Initializing offline login...');
         let popupLogin = new popup();
-        let loginOffline = document.querySelector('.login-offline');
-
-        let emailOffline = document.querySelector('.email-offline');
-        let connectOffline = document.querySelector('.connect-offline');
+        let loginOffline = document.querySelector('.login-card-mojang');
+        let emailOffline = document.querySelector('.Mail');
+        let connectOffline = document.querySelector('.login-btn');
         loginOffline.style.display = 'block';
 
         connectOffline.addEventListener('click', async () => {
