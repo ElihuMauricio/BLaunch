@@ -1,7 +1,7 @@
 {
     "name": "Brazuca-Launcher",
     "preductname": "Brazuca Launcher",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Launcher de Brazuca Studios",
     "main": "src/app.js",
     "author": {
