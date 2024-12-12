@@ -1,15 +1,15 @@
 {
-    "name": "Brazuca-Launcher",
-    "preductname": "Brazuca Launcher",
-    "version": "1.0.4",
+    "name": "Brazuca-Client",
+    "preductname": "Brazuca Client",
+    "version": "1.0.5",
     "description": "Launcher de Brazuca Studios",
     "main": "src/app.js",
     "author": {
         "name": "IgnExotic",
         "email": "IgnExoticJr@gmail.com",
-        "url": "http://IgnExotic.fun"
+        "url": "https://x.com/IgnExotiic"
     },
-    "url": "http://ignexotic.fun/Api/BLaunch",
+    "url": "http://163.5.120.163:25571",
     "scripts": {
         "start": "cross-env-shell NODE_ENV=dev electron .",
         "dev": "cross-env-shell DEV_TOOL=open nodemon --exec npm start",

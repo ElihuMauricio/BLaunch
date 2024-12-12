@@ -30,9 +30,9 @@ class Splash {
 
     async startAnimation() {
         let splashes = [
-            { "message": "Descargando Api de Juegos...", "author": "IgnEx0tic" },
-            { "message": "Cargando Configuraciones...", "author": "IgnEx0tic" },
-            { "message": "Cargando Launcher...", "author": "IgnEx0tic" }
+            { "message": "Descargando Api de Juegos...", "author": "IgnExotiic" },
+            { "message": "Cargando Configuraciones...", "author": "IgnExotiic" },
+            { "message": "Cargando Launcher...", "author": "IgnExotiic" }
         ];
         let splash = splashes[Math.floor(Math.random() * splashes.length)];
         this.splashMessage.textContent = splash.message;

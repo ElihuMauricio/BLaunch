@@ -4,7 +4,7 @@
  */
 import { config, database, logger, changePanel, appdata, setStatus, pkg, popup } from '../utils.js'
 
-// cambiar información de la actividad de discord en el launcher
+// cambiar información de la actividad de discord 
 const clientId = '1147293482373877770';
 const DiscordRPC = require('discord-rpc');
 const RPC = new DiscordRPC.Client({ transport: 'ipc' });
@@ -17,7 +17,7 @@ async function setActivity() {
 RPC.on('ready', async () => {
     setActivity();
     RPC.setActivity({
-        state: `En el launcher`,
+        state: `En el Menú`,
         startTimestamp: startingTime,
         largeImageKey: 'brazuca',
         smallImageKey: 'brazucalogo',
@@ -333,13 +333,13 @@ class Home {
                 buttons: [
                     {
                         label: `Discord`,
-                        url: `https://discord.gg/`,
+                        url: `https://discord.gg/8EM9wJUsmb8EM9wJUsmb`,
                     }
                 ]
             })
             new logger('Minecraft', '#36b030');
             ipcRenderer.send('main-window-progress-load')
-            infoStarting.innerHTML = `Demarrage en cours...`
+            infoStarting.innerHTML = `Iniciando...`
             console.log(e);
         })
 
@@ -354,7 +354,7 @@ class Home {
             new logger(pkg.name, '#7289da');
             console.log('Close');
             RPC.setActivity({
-                state: `En el launcher`,
+                state: ``,
                 largeImageKey: 'brazuca',
                 smallImageKey: 'brazucalogo',
                 largeImageText: `Brazuca Studios`,
@@ -362,7 +362,7 @@ class Home {
                 buttons: [
                     {
                         label: `Discord`,
-                        url: `https://discord.gg/`,
+                        url: `https://discord.gg/8EM9wJUsmb`,
                     }
                 ]
             }).catch();
@@ -377,15 +377,15 @@ class Home {
                     ipcRenderer.send("main-window-show")
                 };
                 RPC.setActivity({
-                    state: `En el launcher`,
-                    largeImageKey: 'icon',
-                    smallImageKey: 'verificado',
-                    largeImageText: `Miguelki Network`,
+                    state: ``,
+                    largeImageKey: 'brazuca',
+                    smallImageKey: 'brazucalogo',
+                    largeImageText: `Brazuca Studios`,
                     instance: true,
                     buttons: [
                         {
                             label: `Discord`,
-                            url: `https://discord.gg/7kPGjgJND7`,
+                            url: `https://discord.gg/8EM9wJUsmb`,
                         }
                     ]
                 }).catch();
@@ -409,15 +409,15 @@ class Home {
                 new logger(pkg.name, '#7289da');
                 console.log(err);
                 RPC.setActivity({
-                    state: `En el launcher`,
-                    largeImageKey: 'icon',
-                    smallImageKey: 'verificado',
-                    largeImageText: `Miguelki Network`,
+                    state: ``,
+                    largeImageKey: 'brazuca',
+                    smallImageKey: 'brazucalogo',
+                    largeImageText: `Brazuca Studios`,
                     instance: true,
                     buttons: [
                         {
                             label: `Discord`,
-                            url: `https://discord.gg/7kPGjgJND7`,
+                            url: `https://discord.gg/8EM9wJUsmb`,
                         }
                     ]
                 }).catch();
