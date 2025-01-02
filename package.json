@@ -1,7 +1,7 @@
 {
     "name": "Brazuca-Client",
     "preductname": "Brazuca Client",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "Launcher de Brazuca Studios",
     "main": "src/app.js",
     "author": {
@@ -9,7 +9,7 @@
         "email": "IgnExoticJr@gmail.com",
         "url": "https://x.com/IgnExotiic"
     },
-    "url": "http://163.5.120.163:25571",
+    "url": "http://5.181.135.52:25571",
     "scripts": {
         "start": "cross-env-shell NODE_ENV=dev electron .",
         "dev": "cross-env-shell DEV_TOOL=open nodemon --exec npm start",
